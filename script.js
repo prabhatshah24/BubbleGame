@@ -97,7 +97,7 @@ let d = setInterval(() => {
   //scoreboard and timer
   time--;
   watch.textContent = String(time);
-  if (time === 15) {
+  if (time === 0) {
     gameOverSound.play();
     bgMusic.pause();
     bgMusic.currentTime = 0;
