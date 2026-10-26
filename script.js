@@ -1,5 +1,5 @@
 let ballSize = 100;
-let time = 0;
+let time = 15;
 let score = 0;
 
 const watch = document.querySelector(".watch");
@@ -95,7 +95,7 @@ let a = setInterval(() => {
 
 let d = setInterval(() => {
   //scoreboard and timer
-  time++;
+  time--;
   watch.textContent = String(time);
   if (time === 15) {
     gameOverSound.play();
